@@ -23,7 +23,7 @@ bcsf-template-base
     <div class="container">
         <h1 class="text-white">Contact Form Template</h1>
         <div class="p-3 border border-2 rounded shadow-lg bg-light" id="formContainingDiv">
-            <form name="contactForm" class="row g-3 p-2">
+            <form name="contactForm" class="row g-3 p-2" netlify>
                 <div class="col-12">
                     <div class="row">
                         <!-- NOTICE I'M ONLY USING 1 ROW FOR ALL
@@ -66,6 +66,21 @@ bcsf-template-base
                             <label for="inputMessage" class="form-label">Message</label>
                             <textarea type="text" class="form-control" name="message" rows="4"
                                 placeholder="Write your message here"></textarea>
+                        </div>
+                        <div class="col-12 form-group">
+                            <label for="form-label">How did you hear about us?</label>
+                            <div class="form-check form-check-inline">
+                                <label for="inputFunnel" class="form-label">Radio</label>
+                                <input type="checkbox" value="radio" class="form-check-input" name="myCustomName1"/>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <label for="inputFunnel" class="form-label">Print</label>
+                                <input type="checkbox" value="print" class="form-check-input" name="myCustomName2"/>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <label for="inputFunnel" class="form-label">Website</label>
+                                <input type="checkbox" value="website" class="form-check-input" name="myCustomName3"/>
+                            </div>
                         </div>
                         <div class="col-12 d-flex justify-content-center pt-2">
                             <button type="submit" class="btn btn-outline-info btn-lg ">Submit</button>
