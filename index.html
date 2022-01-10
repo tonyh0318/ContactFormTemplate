@@ -1,0 +1,87 @@
+<!-- Bootstrap coder foundry template base
+bcsf-template-base
+-->
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Contact Form Template</title>
+    <!--This text shows up in a google search!!!!!!!!!!!!!!!!!!!!!!! -->
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="/css/site.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Contact Form Template</h1>
+        <div class="p-3 border border-2 rounded shadow-lg bg-light" id="formContainingDiv">
+            <form name="contactForm" class="row g-3 p-2">
+                <div class="col-12">
+                    <div class="row">
+                        <!-- NOTICE I'M ONLY USING 1 ROW FOR ALL
+                         THIS CONTENT.  ADDING ROWS WILL ADD GUTTERS AND ALSO MEANS EVERYTHING WILL NOT BE IN A SINGLE CONTAINER -->
+                        <div class="col-12 col-md-6 form-group">
+                            <!--form group means everything in this div is one component -->
+                            <label for="inputFirstName" class="form-label">First Name</label>
+                            <input type="text" class="form-control" name="firstName" required />
+                            <!--required is a Boolean....means this field can't be blank -->
+                        </div>
+                        <div class="col-12 col-md-6 form-group">
+                            <!--form group means everything in this div is one component -->
+                            <label for="inputLastName" class="form-label">Last Name</label>
+                            <input type="text" class="form-control" name="lastName" required />
+                            <!--required is a Boolean....means this field can't be blank -->
+                        </div>
+                        <div class="col-12 col-md-4 form-group">
+                            <label for="inputEmail" class="form-label">Email</label>
+                            <!-- "placeholder" isn't considered actual input..if i wanted actual input i'd use "value" instead -->
+                            <input type="email" class="form-control" name="email" required
+                                placeholder="example@email.com" />
+
+                        </div>
+                        <div class="col-12 col-md-4 form-group">
+                            <label for="inputPhone" class="form-label">Phone</label>
+                            <input type="tel" class="form-control" placeholder="ex 555-555-0101" />
+                        </div>
+                        <div class="col-12 col-md-4 form-group">
+                            <label for="inputContactReason" class="form-label">Reason</label>
+                            <select class="form-select" name="contactReason">
+                                <option>Choose one...</option>
+                                <!-- unless otherwise specified with "specified" the first option is selected -->
+                                <option value="freelance">Freelance Work</option>
+                                <option value="contract">Contract Work</option>
+                                <option value="personal">Personal</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="col-12 form-group">
+                            <label for="inputMessage" class="form-label">Message</label>
+                            <textarea type="text" class="form-control" name="message" rows="4"
+                                placeholder="Write your message here"></textarea>
+                        </div>
+                        <div class="col-12 d-flex justify-content-center pt-2">
+                            <button type="submit" class="btn btn-outline-info btn-lg ">Submit</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- button should be inside "form"..if outside then more code 
+                    needs to be added to get it to work -->
+            </form>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
